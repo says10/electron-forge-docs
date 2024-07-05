@@ -15,7 +15,7 @@ To use `@electron-forge/maker-zip`, add it to the `makers` array in your Forge c
 module.exports = {
   makers: [
     {
-      name: '@electron-forge/maker-zip',
+      name: '@electron-forge/maker-zip'
     }
   ]
 };
@@ -68,4 +68,4 @@ The first time you run `make` with this parameter configured, an architecture-sp
 
 Once this asset is uploaded to the bucket, subsequent runs will read from the existing manifest at `https://my-bucket.s3.amazonaws.com/my-app-updates/darwin/arm64/RELEASES.json` and modify it to update the `currentRelease` property to the next version that is built.
 
-For end-to-end instructions on this process, including how to publish assets to S3 and set up the autoUpdater to read the `RELEASES.json` manifest, see the [Auto updating from S3](config/publishers/s3.md#auto-updating-from-s3 "mention") guide.
+For end-to-end instructions on this process, including how to publish assets to S3 and set up the autoUpdater to read the `RELEASES.json` manifest, see the [Auto updating from S3](../publishers/s3.md#auto-updating-from-s3 "mention") guide.
